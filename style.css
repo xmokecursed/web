@@ -1,0 +1,263 @@
+html {
+  background: url('zzz-background.jpg') repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.right {
+  float: right;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  font-size: 20px;
+}
+
+.left {
+  float: left;
+  margin-left: 13px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  font-size: 20px;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+#tpbar {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 7px;
+  position: relative;
+  width: 52%;
+  height: 3%;
+  margin: 0 auto;
+  z-index: 999;
+  user-select: none;
+}
+
+.cont {
+  position: fixed;
+  width: 90%;
+  height: 100%;
+  z-index: 1;
+}
+
+.footer {
+  bottom: 2.5%;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  font-family: "Comic Sans MS", "Comic Sans";
+  letter-spacing: 2px;
+  font-size: 70%;
+  margin: 1px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.name-section {
+  position: fixed;
+  top: 40%;
+  left: 27%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 15px;
+  z-index: 1;
+}
+
+.icon-img {
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin-top: -18%;
+  margin-left: 30%;
+  margin-right: 0%;
+  width: normal;
+  height: normal;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.name {
+  position: static;
+  font-family: "Comic Sans MS", "Comic Sans";
+  color: white;
+  margin: 0;
+  font-size: 100px;
+}
+
+.htext {
+  position: static;
+  font-family: "Comic Sans MS", "Comic Sans";
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+
+.invb {
+  background-color: #424549;
+  color: #ffffff;
+  width: 130px;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-family: "Comic Sans MS", "Comic Sans";
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.invb:hover {
+  background-color: #2c2f33;
+  color: #ffffff;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  padding-right: 40px;
+}
+
+.invs:hover {
+  background-color: #2c2f33;
+  color: #ffffff;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  padding-right: 40px;
+}
+
+.invs {
+  background-color: #424549;
+  color: #ffffff;
+  width: 160px;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-family: "Comic Sans MS", "Comic Sans";
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+
+.invb::after {
+  content: '↗';
+  position: absolute;
+  right: -20px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.invb:hover::after {
+  opacity: 1;
+  right: 10px;
+}
+
+.invs::after {
+  content: '↗';
+  position: absolute;
+  right: -20%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.invs:hover::after {
+  opacity: 1;
+  right: 10px;
+}
+
+.btns {
+  margin-top: 20px;
+  margin-left: -3px;
+}
+
+#tcmd {
+  transition: all 0.5s ease;
+}
+
+#tcmd:hover {
+  color: #b3b3b3;
+  background-color: #4d4d4d;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+#tstats {
+  transition: all 0.5s ease;
+}
+
+#tstats:hover {
+  color: #b3b3b3;
+  background-color: #4d4d4d;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+#tstatus {
+  transition: all 0.5s ease;
+}
+
+#tstatus:hover {
+  color: #b3b3b3;
+  background-color: #4d4d4d;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+#tprivacy {
+  transition: all 0.5s ease;
+}
+
+#tprivacy:hover {
+  color: #b3b3b3;
+  background-color: #4d4d4d;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+#tdocs {
+  transition: all 0.5s ease;
+}
+
+#tdocs:hover {
+  color: #b3b3b3;
+  background-color: #4d4d4d;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+#ttos {
+  transition: all 0.5s ease;
+}
+
+#ttos:hover {
+  color: #b3b3b3;
+  background-color: #4d4d4d;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
